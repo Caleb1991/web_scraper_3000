@@ -5,6 +5,7 @@ RSpec.describe 'WikiAttributeScraper' do
     before :each do
       @wiki_scraper = WikiAttributeScraper.new("Lego")
     end
+    
     it 'exists' do
       expect(@wiki_scraper).to be_an_instance_of(WikiAttributeScraper)
     end

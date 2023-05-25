@@ -3,7 +3,7 @@ require 'nokogiri'
 require 'csv'
 require 'open-uri'
 
-class WikiAttributeScraper
+class WikiAttributeScraperRubyObject
   attr_reader :url,
               :header
 
