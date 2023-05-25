@@ -1,6 +1,7 @@
 class Api::V1::WikiAttributeScrapersController < ApplicationController
   def search
-    search_results = WikiAttributeScraper.new('Lego')
-    render json: WikiAttributeScraperSerializer.new(search_results)
+    poro = WikiAttributeScraperRubyObject.new(params[:keyword])
+    model = WikiAttributeScraper.find(poro.model_id)
+    render json: WikiAttributeScraperSerializer.new(model)
   end
 end

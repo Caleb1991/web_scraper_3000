@@ -33,6 +33,8 @@ gem 'pry'
 
 gem 'rspec-rails'
 
+gem 'fast_jsonapi'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
